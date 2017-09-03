@@ -1,0 +1,300 @@
+body,
+html {
+  height: 100%;
+}
+#layout {
+  height: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+#layout #Manager {
+  z-index: 100;
+}
+#layout #Manager .slideBar .content {
+  background-color: #fff;
+}
+#layout #Manager .slideBar .content a {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+}
+#layout #Manager .slideBar .content a img {
+  margin: 0 auto;
+}
+#layout #Manager .slideBar .content #list {
+  width: 100%;
+}
+#layout #Manager .slideBar .content #list > ul {
+  padding-left: 0;
+}
+#layout #Manager .slideBar .content #list > ul > li {
+  padding-left: 15px;
+  line-height: 40px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+#layout #Manager .slideBar .content #list > ul > li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+#layout #Manager .slideBar .content #list > ul > li.active {
+  color: hotpink;
+}
+#layout #Manager .slideBar .content #list > ul > li span {
+  float: right;
+  margin-right: 10px;
+}
+#layout #Manager .lianZai {
+  width: 100%;
+}
+#layout #Manager .lianZai .content {
+  width: 100%;
+  background-color: #fff;
+}
+#layout #Manager .lianZai .content .top {
+  height: 41px;
+  box-shadow: 0px 0px 4px 0px #4D1E1E;
+}
+#layout #Manager .lianZai .content .top span {
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  height: 100%;
+  float: left;
+  line-height: 41px;
+}
+#layout #Manager .lianZai .content .top span i {
+  font-size: 20px;
+  color: hotpink;
+}
+#layout #Manager .lianZai .content .top h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 41px;
+  text-align: center;
+  margin: 0 auto;
+}
+#layout #Manager .lianZai .content .list {
+  width: 100%;
+}
+#layout #Manager .lianZai .content .list > ul {
+  padding-left: 0;
+}
+#layout #Manager .lianZai .content .list > ul > li {
+  padding: 12px;
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+}
+#layout #Manager .lianZai .content .list > ul > li > a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+#layout #Manager .lianZai .content .list > ul > li > a > img {
+  height: 100%;
+  float: left;
+}
+#layout #Manager .lianZai .content .list > ul > li > a .dec {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 5px;
+  color: #000;
+}
+#layout #Manager .lianZai .content .list > ul > li > a .dec h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#layout #Manager .lianZai .content .list > ul > li > a .dec span {
+  opacity: .6;
+  color: #000;
+}
+#layout #Manager .zhuanTi {
+  width: 100%;
+}
+#layout #Manager .zhuanTi .content {
+  width: 100%;
+  background-color: #fff;
+}
+#layout #Manager .zhuanTi .content .top {
+  height: 41px;
+  box-shadow: 0px 0px 4px 0px #4D1E1E;
+}
+#layout #Manager .zhuanTi .content .top span {
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  height: 100%;
+  float: left;
+  line-height: 41px;
+}
+#layout #Manager .zhuanTi .content .top span i {
+  font-size: 20px;
+  color: hotpink;
+}
+#layout #Manager .zhuanTi .content .top h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 41px;
+  text-align: center;
+  margin: 0 auto;
+}
+#layout #Manager .zhuanTi .content .list > ul {
+  padding-left: 0;
+  width: 100%;
+  padding: 10px;
+}
+#layout #Manager .zhuanTi .content .list > ul > li {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: -3px 5px 6px 0px #ccc;
+  height: 180px;
+}
+#layout #Manager .zhuanTi .content .list > ul > li > a > img {
+  width: 100%;
+}
+#layout #Manager .zhuanTi .content .list > ul > li > a > span {
+  font-size: 15px;
+  color: #000;
+  opacity: .5;
+}
+#layout #topbar {
+  width: 100%;
+  height: 41px;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  line-height: 41px;
+  display: flex;
+  justify-content: space-between;
+}
+#layout #topbar h2 {
+  float: left;
+  font-size: 14px;
+  line-height: 41px;
+  margin-top: 0;
+}
+#layout #topbar .btn,
+#layout #topbar .search {
+  padding: 9px;
+  width: 40px;
+  height: 100%;
+  line-height: 23px;
+  text-align: center;
+}
+#layout #topbar .btn i,
+#layout #topbar .search i {
+  color: hotpink;
+}
+#layout #topbar .btn {
+  float: left;
+}
+#layout #topbar .search {
+  float: right;
+}
+#layout #topbar .search i {
+  font-size: 15px;
+}
+#layout #slide {
+  width: 100%;
+  height: 141px;
+}
+#layout #slide .swiper-container {
+  width: 100%;
+  height: 141px;
+}
+#layout #slide .swiper-container .swiper-slide {
+  position: relative;
+}
+#layout #slide .swiper-container .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+#layout #slide .swiper-container .swiper-slide .description {
+  z-index: 99;
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#layout #slide .swiper-container .swiper-slide .description span {
+  color: #fff;
+  font-size: 12px;
+  line-height: 36px;
+  padding-left: 10px;
+}
+#layout #content .tab {
+  height: 48px;
+  background-color: #fff;
+  width: 100%;
+}
+#layout #content .tab > ul {
+  padding-left: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#layout #content .tab > ul > li {
+  padding: 0 23px;
+  height: 100%;
+  line-height: 48px;
+  float: left;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+#layout #content .tab > ul > li.active {
+  color: hotpink;
+  border-bottom: 2px solid hotpink;
+}
+#layout #content .list > ul {
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+#layout #content .list > ul > li {
+  position: relative;
+  height: 285px;
+  padding: 0px;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#layout #content .list > ul > li > a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#layout #content .list > ul > li > a .pic {
+  position: relative;
+  padding: 5px 5px 0 5px;
+  width: 100%;
+  height: 250px;
+}
+#layout #content .list > ul > li > a .pic img {
+  width: 100%;
+  height: 100%;
+}
+#layout #content .list > ul > li > a .pic div {
+  line-height: 36px;
+  height: 36px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 0 5px;
+}
+#layout #content .list > ul > li > a .pic div span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#layout #content .list > ul > li > a h2 {
+  color: #000;
+  font-size: 12px;
+  margin-top: 10px;
+}

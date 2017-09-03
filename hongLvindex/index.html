@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="less/index.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="lib/swiper.css">
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <link rel="stylesheet" href="lib/amazeui.min.css">
+    <link rel="stylesheet" href="lib/app.css">
+
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- 功能界面布局 -->
+        <div id="Manager">
+            <!-- 侧边栏内容 -->
+            <div id="doc-oc-demo2" class="slideBar am-offcanvas">
+                <div class="content am-offcanvas-bar">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <div id="list">
+                        <ul>
+                            <li data-am-offcanvas="{target: '#doc-oc-demo3'}">连载动漫<span><i class="iconfont icon-return"></i></span></li>
+                            <li data-am-offcanvas="{target: '#doc-oc-demo4'}">专题列表<span><i class="iconfont icon-return"></i></span></li>
+                            <li>关于<span><i class="iconfont icon-return"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 连载漫画内容 -->
+            <div id="doc-oc-demo3" class="lianZai am-offcanvas">
+                <div class="content am-offcanvas-bar am-offcanvas-bar-flip">
+                    <div class="top">
+                        <span class="back"><i class="iconfont icon-fanhui"></i></span>
+                        <h2>连载动漫</h2>
+                    </div>
+                    <div class="list">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 专题列表 -->
+            <div id="doc-oc-demo4" class="zhuanTi am-offcanvas">
+                <div class="content am-offcanvas-bar am-offcanvas-bar-flip">
+                    <div class="top">
+                        <span class="back"><i class="iconfont icon-fanhui"></i></span>
+                        <h2>专题列表</h2>
+                    </div>
+                    <div class="list">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主页的布局容器 -->
+        <!-- 头部部分的开始 -->
+        <header id="topbar">
+            <!-- 左边菜单按钮 -->
+            <a href="#" class="btn" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}">
+                <i class="iconfont icon-caidan"></i>
+            </a>
+            <!-- /左边菜单按钮 -->
+            <!-- 项目名称 -->
+            <h2 class="">红旅漫画</h2>
+            <!-- /项目名称 -->
+            <!-- 搜索按钮 -->
+            <a href="#" class="search">
+                <i class="iconfont icon-fangdajing"></i>
+            </a>
+            <!-- /搜索按钮 -->
+        </header>
+        <!-- 头部部分的结束 -->
+
+        <!-- 广告轮播的开始 -->
+        <section id="slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                </div>
+
+            </div>
+        </section>
+        <!-- 广告轮播的结束 -->
+
+
+        <!-- 漫画模块的开始 -->
+        <section id="content">
+            <!-- tab栏 -->
+            <div class="tab">
+                <ul class="row">
+                    <li class="active col-md-3 one">新增连载</li>
+                    <li class="col-md-3 tow">新增完结</li>
+                    <li class="col-md-3 three">推荐连载</li>
+                    <li class="col-md-3 four">推荐完结</li>
+                </ul>
+            </div>
+            <!-- /tab栏 -->
+            <!-- 内容部分 -->
+            <div class="list">
+                <ul class="row"></ul>
+            </div>
+            <!-- /内容部分 -->
+        </section>
+        <!-- 漫画模块的结束 -->
+
+
+
+
+
+    </div>
+
+
+
+    <!-- 模板 -->
+    <script type="text/html" id="template_1">
+        {{each}}
+        <div class="swiper-slide">
+            <a href="{{$value.url}}"><img src="{{$value.img}}" alt=""></a>
+            <div class="description"><span class="title">{{$value.title}}</span></div>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="template_2">
+        {{each}}
+        <li class="col-xs-6 col-sm-3 col-md-4">
+            <a href="{{$value.url}}">
+                <div class="pic">
+                    <img src="{{$value.img}}" alt="">
+                    <div><span>{{$value.update}}</span></div>
+                </div>
+                <h2>{{$value.name}}</h2>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="template_3">
+        {{each}}
+        <li>
+            <a href="{{$value.url}}">
+                <img src="{{$value.img}}" alt="">
+                <div class="dec">
+                    <h2>{{$value.name}}</h2>
+                    <span>{{$value.episode}}</span>
+                    <span>{{$value.updateTime}}</span>
+                    <span>下载次数{{$value.downloadCount}}</span>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="template_4">
+        {{each}}
+        <li>
+            <a href="{{$value.url}}">
+                <img src="{{$value.img}}" alt="">
+                <span>{{$value.title}}</span>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 模板 -->
+</body>
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/swiper.min.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/index.js"></script>
+<script src="lib/amazeui.js"></script>
+<script>
+</script>
+
+</html>
